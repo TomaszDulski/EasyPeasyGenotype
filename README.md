@@ -5,6 +5,15 @@ Package helps to generate tables and plots of data after qPCR. It use the data f
 Check if you have devtools package, if not install it by typing: 
 
 $ install.packages("devtools")
+
 Then install package EasyPeasyGenotype
 
 $devtools::install_github('TomaszDulski/EasyPeasyGenotype')
+
+## Execute the function
+
+Type:
+
+$ EasyPeasyGenotype(file_name = <"name_of_your_file_from_qPCR">, differential_temperature = <set threshold temperature between pics of WT and -/->, het_lowest_bump = <set threshold for heterozygous, see on attached plot>)
+
+
