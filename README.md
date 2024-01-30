@@ -36,6 +36,10 @@ Combined sample:
 Separate samples:
 [tsc2_none_td_separate.pdf](https://github.com/TomaszDulski/EasyPeasyGenotype/files/14097347/tsc2_none_td_separate.pdf)
 
+Excel table:
+[tsc2_none_td.xlsx](https://github.com/TomaszDulski/EasyPeasyGenotype/files/14097516/tsc2_none_td.xlsx)
+
+
 ## Troubleshooting
 
 Keep in mind that this package do not always set the genotypes correctly. Sometimes a curve of single sample might be shifted due to the different amount of DNA matrix in the sample or other factors. Be aware of that and always check the results.  
