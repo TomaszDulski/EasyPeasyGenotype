@@ -1,0 +1,2 @@
+devtools::install_github('TomaszDulski/EasyPeasyGenotype')
+EasyPeasyGenotype::EasyPeasyGenotype(fil)  
