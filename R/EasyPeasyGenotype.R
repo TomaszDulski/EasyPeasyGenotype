@@ -153,7 +153,9 @@ EasyPeasyGenotype <- function(file_name, # .txt file exported from lightcycler96
          x = "Temperature",
          y = "ResoLight dF/dT") +
     geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 5) +
-    theme_minimal() +
+    theme_minimal() 
+  
+  plot_draft_separate_s <- plot_draft_separate +
     theme(strip.text = element_text(size = 50),   # Adjust facet label size
           axis.text = element_text(size = 50),    # Adjust scale text size
           plot.title = element_text(size = 50))
@@ -173,7 +175,9 @@ EasyPeasyGenotype <- function(file_name, # .txt file exported from lightcycler96
          x = "Temperature",
          y = "ResoLight dF/dT") +
     geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 7) +
-    theme_minimal() +
+    theme_minimal() 
+
+  plot_draft_combined_s <- plot_draft_combined +
     theme(legend.position = "top",                  # Place legend on top
           axis.text = element_text(size = 50),      # Adjust scale text size
           axis.title = element_text(size = 50),     # Adjust axis title size
@@ -194,9 +198,9 @@ EasyPeasyGenotype <- function(file_name, # .txt file exported from lightcycler96
   print("Table generated and saved successfully !!!")
 
   print("Saving plots")
-  ggsave(paste0(file_path, "_separate.pdf"), plot = plot_draft_separate,
+  ggsave(paste0(file_path, "_separate.pdf"), plot = plot_draft_separate_s,
          width = 100, height = 100, limitsize = FALSE)
-  ggsave(paste0(file_path, "_combined.pdf"), plot = plot_draft_combined,
+  ggsave(paste0(file_path, "_combined.pdf"), plot = plot_draft_combined_s,
          width = 100, height = 100, limitsize = FALSE)
 
   print("Plots generated and saved successfully !!!")
