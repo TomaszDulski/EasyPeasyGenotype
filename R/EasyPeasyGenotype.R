@@ -152,13 +152,14 @@ EasyPeasyGenotype <- function(file_name, # .txt file exported from lightcycler96
     labs(title = "Curves of ResoLight for Different Samples",
          x = "Temperature",
          y = "ResoLight dF/dT") +
-    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 5) +
+    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 1) +
     theme_minimal() 
   
   plot_draft_separate_s <- plot_draft_separate +
     theme(strip.text = element_text(size = 50),   # Adjust facet label size
           axis.text = element_text(size = 50),    # Adjust scale text size
-          plot.title = element_text(size = 50))
+          plot.title = element_text(size = 50)) +
+    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 5)
 
   # Assuming df_long_add contains the relevant data
   # Modify the ggplot code to include all curves on one plot
@@ -174,7 +175,7 @@ EasyPeasyGenotype <- function(file_name, # .txt file exported from lightcycler96
     labs(title = "Curves of ResoLight for Different Samples",
          x = "Temperature",
          y = "ResoLight dF/dT") +
-    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 7) +
+    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 1) +
     theme_minimal() 
 
   plot_draft_combined_s <- plot_draft_combined +
@@ -182,7 +183,8 @@ EasyPeasyGenotype <- function(file_name, # .txt file exported from lightcycler96
           axis.text = element_text(size = 50),      # Adjust scale text size
           axis.title = element_text(size = 50),     # Adjust axis title size
           legend.text = element_text(size = 50),    # Adjust legend text size
-          plot.title = element_text(size = 50))     # Adjust plot title size
+          plot.title = element_text(size = 50)) +    # Adjust plot title size
+    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 7)
   # Print the plot
   print(plot_draft_separate)
   # Print the plot
