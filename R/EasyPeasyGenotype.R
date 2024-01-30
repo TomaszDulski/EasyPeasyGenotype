@@ -152,7 +152,7 @@ EasyPeasyGenotype <- function(file_name, # .txt file exported from lightcycler96
     labs(title = "Curves of ResoLight for Different Samples",
          x = "Temperature",
          y = "ResoLight dF/dT") +
-    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black") +
+    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 0.1) +
     theme_minimal() 
   
   plot_draft_separate_s <- plot_draft_separate +
@@ -175,7 +175,7 @@ EasyPeasyGenotype <- function(file_name, # .txt file exported from lightcycler96
     labs(title = "Curves of ResoLight for Different Samples",
          x = "Temperature",
          y = "ResoLight dF/dT") +
-    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black") +
+    geom_vline(xintercept = differential_temperature, linetype = "dashed", color = "black", size = 0.1) +
     theme_minimal() 
 
   plot_draft_combined_s <- plot_draft_combined +
