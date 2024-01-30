@@ -1,16 +1,16 @@
 # EasyPeasyGenotype
-Package helps to generate tables and plots of data after qPCR. It use the data from lightcycler96 software. package return in console information about numbers of each genotype, give and save data_frame with plate wells and genotype assigned to the well in xlsx format . Return two plots of HRM curves, one plot for combined curves and one for each sample separate.
+Package helps to generate tables and plots of data after qPCR. It use the data from lightcycler96 software. package return in console information about numbers of each genotype, give and save data_frame with plate wells and genotype assigned to the well in .xlsx format. Return two plots of HRM curves, one plot for combined curves and one for each sample separate.
 
 ## Instalation
 Check if you have devtools package, if not install it by typing: 
 
-$ install.packages("devtools")
+install.packages("devtools")
 
 Then install package EasyPeasyGenotype
 
-$devtools::install_github('TomaszDulski/EasyPeasyGenotype')
+devtools::install_github('TomaszDulski/EasyPeasyGenotype')
 
-Remember to load the package after instalation 
+Remember to load the package after installation 
 
 $ library("EasyPeasyGenotype")
 
@@ -23,7 +23,10 @@ From lightcycler software. save the Normalized melting peaks plot as a text file
 
 Type:
 
-$ EasyPeasyGenotype::EasyPeasyGenotype(file_name = <"name_of_your_file_from_qPCR">, differential_temperature = <set threshold temperature between pics of WT and -/->, het_lowest_bump = <set threshold for heterozygous, see on attached plot>)
+EasyPeasyGenotype::EasyPeasyGenotype(file_name = <"name_of_your_file_from_qPCR">, 
+                                      differential_temperature = <set threshold temperature between peaks of WT and -/->, 
+                                      het_lowest_bump = <set threshold for heterozygous, see on attached plot. It has to be under the smaller bump for heterozygous>
+                                      )
 
 
 ## Output
