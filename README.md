@@ -23,7 +23,7 @@ From lightcycler software. save the Normalized melting peaks plot as a text file
 
 Type:
 
-$ EasyPeasyGenotype(file_name = <"name_of_your_file_from_qPCR">, differential_temperature = <set threshold temperature between pics of WT and -/->, het_lowest_bump = <set threshold for heterozygous, see on attached plot>)
+$ EasyPeasyGenotype::EasyPeasyGenotype(file_name = <"name_of_your_file_from_qPCR">, differential_temperature = <set threshold temperature between pics of WT and -/->, het_lowest_bump = <set threshold for heterozygous, see on attached plot>)
 
 
 ## Output
