@@ -1,0 +1,18 @@
+\name{EasyPeasyGenotype}
+\alias{EPG}
+\title{EasyPeasyGenotype - package for genotype results form qPCR}
+\usage{
+EasyPeasyGenotype()
+}
+\description{
+Package helps to generate tables and plots of data after qPCR. It use the data from lightcycler96 software. package return in console information about numbers of each genotype, give and save data_frame with plate wells and genotype assigned to the well in xlsx format . Return two plots of HRM curves, one plot for combined curves, and one for each curve separate.
+
+file_name - is .txt file exported from lightcycler96 software, During exporting file save column as a sample.
+
+differential_temperature - set critical temp. between picks of WT, and -/-. in case of tsc2 it's 80.5
+
+het_lowest_bump - set threshold of Resolight value in temperature period of 76-78 C, where value is below heterozygous bump and above curves for WT and -/-
+}
+\examples{
+EasyPeasyGenotype(file_name = , differential_temperature = , het_lowest_bump =)
+}
