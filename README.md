@@ -32,6 +32,7 @@ For generating the 96-wells plate type:
 
 plate_96(argument = <here put the output from the previous function EasyPeasyGenotype. )
     
+![plate96](https://github.com/TomaszDulski/EasyPeasyGenotype/assets/95283499/560c9bb4-0166-4d60-b0ec-c7e852ca0f7e)
 
 
 ## Output
@@ -49,7 +50,7 @@ Excel table:
 
 The output from the plate_96 function:
 
-[plate.pdf](https://github.com/TomaszDulski/EasyPeasyGenotype/files/14113292/plate.pdf)
+
 
 ## Troubleshooting
 
