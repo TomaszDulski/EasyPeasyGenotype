@@ -26,12 +26,17 @@ Type:
 EasyPeasyGenotype::EasyPeasyGenotype( file_name = < "name_of_your_file_from_qPCR" >, \
     differential_temperature = < set threshold temperature between peaks of WT and -/- >, \
     het_lowest_bump = < set threshold for heterozygous, see on attached plot. It has to be under the smaller bump for heterozygous > \
-    ) 
+    ) \
+\
+For generating the 96-wells plate type:
+
+plate_96(argument = <here put the output from the previous function EasyPeasyGenotype. )
+    
 
 
 ## Output
 
-Function will return to you some information in console of the number of each genotype on your plate. Also result table will be saved in the excel file. The generated plots will be saved in pdf extension. One plot is for combined curves and another presents each sample separate (see examples below). All data will be saved in the same location where is your R script. 
+Function EasyPeasyGenotype will return to you some information in console of the number of each genotype on your plate. Also result table will be saved in the excel file. The generated plots will be saved in pdf extension. One plot is for combined curves and another presents each sample separate (see examples below). All data will be saved in the same location where is your R script. 
 
 Combined sample:
 [tsc2_none_td_combined.pdf](https://github.com/TomaszDulski/EasyPeasyGenotype/files/14097327/tsc2_none_td_combined.pdf)
@@ -42,6 +47,9 @@ Separate samples:
 Excel table:
 [tsc2_none_td.xlsx](https://github.com/TomaszDulski/EasyPeasyGenotype/files/14097516/tsc2_none_td.xlsx)
 
+The output from the plate_96 function:
+
+[plate.pdf](https://github.com/TomaszDulski/EasyPeasyGenotype/files/14113292/plate.pdf)
 
 ## Troubleshooting
 
